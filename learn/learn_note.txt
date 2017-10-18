@@ -1,1 +1,36 @@
 php学习笔记
+
+1.什么是php
+    PHP：（“PHP: Hypertext Preprocessor”，超文本预处理器的字母缩写）是一种被广泛应用的开放源代码的多用途脚本语言，它可嵌入到 HTML中，尤其适合 web 开发。
+2.php的运行环境
+    集成环境：wampserver xmapp phpstudy appserver
+    lamp：linux apache mysql php
+    lnmp：linux nginx mysql php
+    编辑器：vim sublime atom notepad++
+    IDE：phpstrom webstrom
+3.php信息
+    phpinfo();：显示所有信息的函数
+4.php文件格式
+    .php：php文件以".php"结尾
+    标签格式：
+        <?php ?>
+            php默认的开始、结束标签
+        <?php
+            推荐使用
+        <? ?>
+            短标签，需要开启short_open_tag = On
+        <% %>
+            asp风格标签，需要开启asp_tags = On
+        <?= ?>
+            用于输出，等同于<?php echo ; ?>可以直接使用
+        <%= %>
+            用于输出，等同于<?php echo ; ?>需要开启asp_tags = On，才可以使用
+5.php每行标签";"
+    php每行以分号";"作为结束标签，如果使用的是"<?php ?>"的php标签，最后一行可以不写";"，因为php的关闭标签"?>"会自动表明分号
+6.php注释
+    单行注释一：//单行注释
+    单行注释二：#单行注释
+    这是多行注释块：/*横跨多行注释*/
+7.php大小写敏感
+    不敏感：类名、方法名、属性名、函数名和关键词（例如 if、else、echo 等等）
+    敏感：变量名、常量名(有设置区分大小写的参数)、元素下标

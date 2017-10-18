@@ -1,3 +1,4 @@
+<!--
 <html>
  <head>
   <title>PHP 测试</title>
@@ -12,6 +13,11 @@
         echo 'key = ' . $item . ', value = ' . $value ;
         echo '<br />';
     }
+    echo '<hr />';
+    echo 'End';
     ?>
 </body>
 </html>
+-->
+<?php
+echo 'Hello World';
