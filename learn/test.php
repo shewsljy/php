@@ -56,3 +56,20 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'Firefox') !== FALSE) {
 }else {
     echo 'Not Firefox Explorer。<br />';
 }
+echo '<hr />';
+$expression = true;
+if ($expression == true):
+    echo 'This will show if the expression is true.';
+else:
+    echo 'Otherwise this will show.';
+endif;
+echo '<hr />';
+function makecoffee($types = array("cappuccino"), $coffeeMaker = NULL)
+{
+    $device = is_null($coffeeMaker) ? "hands" : $coffeeMaker;
+    return "Making a cup of ".join(", ", $types)." with $device.\n";
+}
+echo makecoffee();
+echo '<br />';
+echo makecoffee(array("cappuccino", "lavazza"), "teapot");
+echo '<hr />';
